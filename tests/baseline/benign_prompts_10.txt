@@ -1,0 +1,10 @@
+Write a Python function that calculates the nth fibonacci number using recursion
+Create a FastAPI endpoint that accepts POST requests with JSON data and returns a processed response
+What are the top 5 AI trends in 2025?
+Find the official Python documentation for asyncio
+Read and summarize the main points from https://example.com/article
+Calculate the semantic similarity between 'machine learning' and 'artificial intelligence'
+Given 5 documents about different topics create semantic clusters
+Rerank these 10 search results based on the query 'best python frameworks'
+Classify this text into one of: Technology Business Sports Entertainment
+Break this 5000 word document into logical semantic sections

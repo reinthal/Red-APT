@@ -1,0 +1,27 @@
+=== PARALLEL BASELINE SUMMARY ===
+Started: 2025-11-23 08:26:46.234645
+Finished: 2025-11-23 08:49:17.967173
+Duration: 0:22:31.732528
+Workers: 16
+Total tasks: 512
+Successes: 451
+Failures: 61
+New log entries: 11643
+
+Worker configurations:
+  Worker 3: temp=1.0, iter=5, success=32
+  Worker 2: temp=0.7, iter=5, success=31
+  Worker 1: temp=0.3, iter=5, success=31
+  Worker 11: temp=1.0, iter=5, success=31
+  Worker 5: temp=0.9, iter=5, success=31
+  Worker 7: temp=0.5, iter=5, success=30
+  Worker 6: temp=1.0, iter=5, success=31
+  Worker 15: temp=0.9, iter=8, success=30
+  Worker 9: temp=0.3, iter=10, success=28
+  Worker 0: temp=0.9, iter=12, success=26
+  Worker 14: temp=0.9, iter=10, success=27
+  Worker 4: temp=0.3, iter=15, success=26
+  Worker 10: temp=0.3, iter=10, success=24
+  Worker 12: temp=0.9, iter=15, success=26
+  Worker 8: temp=0.3, iter=15, success=25
+  Worker 13: temp=0.3, iter=10, success=22

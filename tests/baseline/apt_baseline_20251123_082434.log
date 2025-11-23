@@ -1,0 +1,20 @@
+=== APT BASELINE SUMMARY ===
+Started: 2025-11-23 08:24:34.771798
+Finished: 2025-11-23 08:51:35.985383
+Duration: 0:27:01.213585
+Workers: 8
+Total tasks: 240
+Successes: 233
+Failures: 7
+Chains completed: 40
+New log entries: 13417
+
+Worker configurations:
+  Worker 7 [jailbreak_escalation_chain]: campaign=322a9173631b, chains=5, success=30
+  Worker 3 [jailbreak_escalation_chain]: campaign=4e7d8d1bb157, chains=5, success=30
+  Worker 2 [infrastructure_attack_chain]: campaign=b3b1c328cf49, chains=5, success=30
+  Worker 6 [infrastructure_attack_chain]: campaign=0777747dd89d, chains=5, success=30
+  Worker 5 [social_engineering_chain]: campaign=e99fa6111ce6, chains=5, success=28
+  Worker 0 [reconnaissance_chain]: campaign=83a305ada5a2, chains=5, success=29
+  Worker 1 [social_engineering_chain]: campaign=f75ddc45f856, chains=5, success=28
+  Worker 4 [reconnaissance_chain]: campaign=5e16c83af553, chains=5, success=28
