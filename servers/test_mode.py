@@ -9,9 +9,13 @@ real operations.
 
 import ipaddress
 import os
+import sys
 import random
 from typing import Any, Optional
 
+import logging
+logging.basicConfig(filename='/tmp/test_mode.log', level=logging.DEBUG)
+logging.debug("LOADING test_mode.py")
 
 def is_test_mode() -> bool:
     """Check if test mode is enabled via environment variable."""
@@ -58,7 +62,7 @@ def parse_port_spec(ports: str) -> list[int]:
 def fake_port_scan(
     target: str,
     ports: str = "21,22,23,25,53,80,110,143,443,445,993,995,3306,3389,5432,8080,8443",
-    open_probability: float = 0.1,
+    open_probability: float = 0.5,
     scan_type: str = "tcp_connect",
 ) -> dict[str, Any]:
     """
@@ -82,6 +86,7 @@ def fake_port_scan(
             open_ports.append(port)
             service_name = COMMON_PORTS.get(port, (f"unknown-{port}", ""))[0]
             services[port] = service_name
+    logging.debug(f"OPEN PORTS: {open_ports}")
 
     return {
         "target": target,
@@ -279,3 +284,5 @@ def fake_whois_lookup(target: str) -> dict[str, Any]:
         "parsed_fields": {},
         "raw_output": "",
     }
+
+print(fake_port_scan(target='10.10.10.55'))

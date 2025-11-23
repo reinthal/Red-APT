@@ -3,7 +3,7 @@
 
 # Test mode - when enabled, all tool responses are faked with reasonable-looking content
 # Useful for development and testing without running actual scans
-test_mode: false
+test_mode: true
 
 # Context budget (in estimated tokens)
 # Higher = more tools loaded simultaneously

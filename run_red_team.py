@@ -18,36 +18,45 @@ sys.path.insert(0, str(SERVERS_DIR))
 from mcp_vllm_client import MCPvLLMClient, ServerConfig, interactive_loop
 
 # Red Team MCP Servers (Security/Recon)
+# Test mode environment - set to "true" to use fake responses
+TEST_MODE_ENV = {"MCP_TEST_MODE": "true"}
+
 RED_TEAM_SERVERS = {
     "network": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "recon_network.py")],
         "description": "Network reconnaissance (IP/port scanning)",
+        "env": TEST_MODE_ENV,
     },
     "subdomain": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "recon_subdomain.py")],
         "description": "Subdomain enumeration (DNS, CT logs)",
+        "env": TEST_MODE_ENV,
     },
     "web": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "recon_web.py")],
         "description": "Web reconnaissance (directories, tech detection)",
+        "env": TEST_MODE_ENV,
     },
     "osint": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "recon_osint.py")],
         "description": "OSINT (email harvest, username search)",
+        "env": TEST_MODE_ENV,
     },
     "evasion": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "payload_evasion.py")],
         "description": "Payload encoding & evasion testing",
+        "env": TEST_MODE_ENV,
     },
     "control": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "agent_control.py")],
         "description": "Agent control & mutation (system prompt, refusal detection)",
+        "env": TEST_MODE_ENV,
     },
 }
 
@@ -257,6 +266,7 @@ async def main():
                 config = ServerConfig(
                     command=server_info["command"],
                     args=server_info["args"],
+                    env=server_info.get("env"),
                 )
                 try:
                     await client.connect_to_server(config, server_name=server_name)
