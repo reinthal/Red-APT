@@ -111,6 +111,7 @@ class RegistryState:
     # Configuration
     auto_evict: bool = True
     lazy_load: bool = True
+    test_mode: bool = False
 
 
 # Global state
@@ -235,6 +236,7 @@ def initialize_registry():
     state.context_budget = config.get("context_budget", DEFAULT_CONTEXT_BUDGET)
     state.auto_evict = config.get("auto_evict", True)
     state.lazy_load = config.get("lazy_load", True)
+    state.test_mode = config.get("test_mode", False)
 
 
 # ---------------------------------------------------------------------------
@@ -255,9 +257,14 @@ async def _connect_to_server(server_name: str) -> Optional[LoadedServer]:
     if not module_path.exists():
         return None
 
+    # Pass test mode to server via environment variable
+    env = os.environ.copy()
+    env["MCP_TEST_MODE"] = "true" if state.test_mode else "false"
+
     params = StdioServerParameters(
         command=sys.executable,
         args=[str(module_path)],
+        env=env,
     )
 
     try:

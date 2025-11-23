@@ -1,6 +1,10 @@
 # MCP Registry Configuration
 # Controls how the centralized registry manages servers and tools
 
+# Test mode - when enabled, all tool responses are faked with reasonable-looking content
+# Useful for development and testing without running actual scans
+test_mode: false
+
 # Context budget (in estimated tokens)
 # Higher = more tools loaded simultaneously
 # Lower = more aggressive eviction

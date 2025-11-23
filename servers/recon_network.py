@@ -21,6 +21,18 @@ from typing import Any, Optional
 
 from mcp.server.fastmcp import FastMCP
 
+from test_mode import (
+    is_test_mode,
+    fake_port_scan,
+    fake_nmap_scan,
+    fake_ping_sweep,
+    fake_masscan_scan,
+    fake_service_banner,
+    fake_reverse_dns,
+    fake_traceroute,
+    fake_whois_lookup,
+)
+
 # Initialize MCP server
 mcp = FastMCP("recon-network")
 
@@ -121,6 +133,9 @@ async def ping_sweep(
     Returns:
         JSON with discovered live hosts
     """
+    if is_test_mode():
+        return json.dumps(fake_ping_sweep(target), indent=2)
+
     try:
         # Validate and expand target
         if "/" in target:
@@ -184,6 +199,9 @@ async def port_scan(
     Returns:
         JSON with open ports and service guesses
     """
+    if is_test_mode():
+        return json.dumps(fake_port_scan(target, ports, scan_type=scan_type), indent=2)
+
     # Parse ports
     port_list = []
     for part in ports.split(","):
@@ -281,6 +299,9 @@ async def nmap_scan(
     Returns:
         Parsed nmap results as JSON
     """
+    if is_test_mode():
+        return json.dumps(fake_nmap_scan(target, scan_type, ports), indent=2)
+
     if not _check_tool("nmap"):
         return json.dumps({"error": "nmap is not installed"})
 
@@ -348,6 +369,9 @@ async def masscan_scan(
     Returns:
         Discovered open ports as JSON
     """
+    if is_test_mode():
+        return json.dumps(fake_masscan_scan(target, ports, rate), indent=2)
+
     if not _check_tool("masscan"):
         return json.dumps({"error": "masscan is not installed. Install with: apt install masscan"})
 
@@ -401,6 +425,9 @@ async def service_banner(
     Returns:
         Service banner if available
     """
+    if is_test_mode():
+        return json.dumps(fake_service_banner(target, port), indent=2)
+
     try:
         reader, writer = await asyncio.wait_for(
             asyncio.open_connection(target, port),
@@ -460,6 +487,9 @@ async def reverse_dns(
     Returns:
         Hostname(s) associated with the IP
     """
+    if is_test_mode():
+        return json.dumps(fake_reverse_dns(ip), indent=2)
+
     try:
         hostname, aliases, _ = socket.gethostbyaddr(ip)
         return json.dumps({
@@ -494,6 +524,9 @@ async def traceroute(
     Returns:
         Network path with hop information
     """
+    if is_test_mode():
+        return json.dumps(fake_traceroute(target, max_hops), indent=2)
+
     if not _check_tool("traceroute"):
         return json.dumps({"error": "traceroute is not installed"})
 
@@ -546,6 +579,9 @@ async def whois_lookup(
     Returns:
         WHOIS registration information
     """
+    if is_test_mode():
+        return json.dumps(fake_whois_lookup(target), indent=2)
+
     if not _check_tool("whois"):
         return json.dumps({"error": "whois is not installed"})
 
