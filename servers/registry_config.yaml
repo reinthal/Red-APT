@@ -1,0 +1,142 @@
+# MCP Registry Configuration
+# Controls how the centralized registry manages servers and tools
+
+# Context budget (in estimated tokens)
+# Higher = more tools loaded simultaneously
+# Lower = more aggressive eviction
+context_budget: 12000
+
+# Automatic eviction when context budget exceeded
+auto_evict: true
+
+# Lazy loading - only load servers when needed
+lazy_load: true
+
+# Server definitions
+# Each server can be customized with priority and category
+servers:
+  # === Security/Recon Servers ===
+  network:
+    module: recon_network.py
+    description: "Network reconnaissance - IP/port scanning, service detection, traceroute"
+    category: recon
+    priority: 7
+
+  subdomain:
+    module: recon_subdomain.py
+    description: "Subdomain enumeration - DNS lookups, CT logs, zone transfers"
+    category: recon
+    priority: 6
+
+  web:
+    module: recon_web.py
+    description: "Web reconnaissance - directory enumeration, tech detection, headers"
+    category: recon
+    priority: 7
+
+  osint:
+    module: recon_osint.py
+    description: "OSINT - email harvesting, username search, social media"
+    category: recon
+    priority: 5
+
+  evasion:
+    module: payload_evasion.py
+    description: "Payload encoding and evasion testing"
+    category: payload
+    priority: 4
+
+  control:
+    module: agent_control.py
+    description: "Agent control - system prompt mutation, refusal detection"
+    category: control
+    priority: 8
+
+  # === Development Servers ===
+  terminal:
+    module: terminal_server.py
+    description: "Shell execution - commands, background processes, environment"
+    category: dev
+    priority: 9  # High priority - core development tool
+
+  filesystem:
+    module: filesystem_server.py
+    description: "File operations - read, write, edit, search, glob"
+    category: dev
+    priority: 9
+
+  packages:
+    module: package_server.py
+    description: "Package management - uv, pip, npm, virtual environments"
+    category: dev
+    priority: 7
+
+  code:
+    module: code_server.py
+    description: "Code tools - templates, formatting, linting, imports"
+    category: dev
+    priority: 8
+
+  git:
+    module: git_server.py
+    description: "Version control - status, diff, commit, push, branches"
+    category: dev
+    priority: 8
+
+  project:
+    module: project_server.py
+    description: "Project scaffolding - templates, build, test, docker"
+    category: dev
+    priority: 6
+
+# Presets - named groups of servers for common tasks
+presets:
+  minimal:
+    - terminal
+    - filesystem
+
+  dev_core:
+    - terminal
+    - filesystem
+    - code
+    - git
+
+  dev_full:
+    - terminal
+    - filesystem
+    - packages
+    - code
+    - git
+    - project
+
+  recon_minimal:
+    - network
+    - web
+
+  recon_full:
+    - network
+    - subdomain
+    - web
+    - osint
+
+  security:
+    - network
+    - subdomain
+    - web
+    - osint
+    - evasion
+    - control
+
+  all:
+    - network
+    - subdomain
+    - web
+    - osint
+    - evasion
+    - control
+    - terminal
+    - filesystem
+    - packages
+    - code
+    - git
+    - project

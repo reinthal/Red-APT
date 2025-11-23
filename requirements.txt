@@ -1,0 +1,10 @@
+# MCP Client & Servers
+openai>=1.0.0
+mcp>=0.1.0
+fastmcp>=0.1.0
+
+# DNS operations (for subdomain enumeration)
+dnspython>=2.4.0
+
+# Optional tools (install if needed)
+# httpx>=0.25.0
