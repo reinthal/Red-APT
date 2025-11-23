@@ -208,7 +208,7 @@ async def get_credentials(
 
 @mcp.tool()
 async def get_credential_stats(
-    creds_file: Optional[str] = None,
+    creds_file: Optional[str] = DEFAULT_CREDS_FILE,
 ) -> str:
     """
     Get statistics about the credentials file.

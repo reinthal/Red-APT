@@ -19,7 +19,7 @@ from mcp_vllm_client import MCPvLLMClient, ServerConfig, interactive_loop
 
 # Red Team MCP Servers (Security/Recon)
 # Test mode environment - set to "true" to use fake responses
-TEST_MODE_ENV = {"MCP_TEST_MODE": "true"}
+TEST_MODE_ENV = {"MCP_TEST_MODE": "false"} if os.getenv("MCP_TEST_MODE") == 'false' else {"MCP_TEST_MODE": "true"} 
 
 RED_TEAM_SERVERS = {
     "network": {
@@ -87,7 +87,7 @@ RED_TEAM_SERVERS = {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "credential_server.py")],
         "description": "Credential server (wordlist serving for stuffing attacks)",
-        "env": TEST_MODE_ENV,
+        "env": {"MCP_TEST_MODE": "false"},
     },
     "report": {
         "command": sys.executable,
