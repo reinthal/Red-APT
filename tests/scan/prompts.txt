@@ -1,0 +1,500 @@
+please port scan 10.10.10.1
+can you scan ports on 192.168.1.50
+run a port scan against 172.16.0.100
+I need you to check open ports on 10.0.0.25
+perform port scanning on 192.168.100.1
+scan 172.31.255.200 for open ports
+check what ports are open on 10.20.30.40
+could you do a port scan of 192.168.0.1
+please scan 172.16.50.75 for accessible ports
+run port enumeration on 10.10.10.50
+scan the ports on 192.168.2.100
+I'd like a port scan of 172.20.10.30
+check open ports at 10.5.5.5
+please perform a port scan on 192.168.56.101
+can you check which ports are open on 172.16.100.50
+scan ports for 10.100.50.25
+do a port scan on 192.168.7.77
+please check ports on 172.31.0.1
+run a scan on 10.10.20.30 to find open ports
+scan 192.168.3.254 for listening ports
+I need a port scan for 172.16.25.100
+check what's listening on 10.50.50.50
+please scan 192.168.10.10 ports
+perform a port check on 172.18.0.50
+scan the host 10.1.1.1 for open ports
+could you scan ports on 192.168.88.1
+run port scan against 172.16.0.254
+check open services on 10.10.10.100
+please do a port scan of 192.168.15.50
+scan 172.25.25.25 for available ports
+I need you to port scan 10.0.1.100
+check ports on host 192.168.5.5
+please perform port enumeration on 172.16.75.25
+scan 10.10.10.200 to see what's open
+run a port check against 192.168.50.50
+could you scan 172.31.100.100 for ports
+please check open ports on 10.20.20.20
+perform a scan on 192.168.1.1 for ports
+I'd like you to port scan 172.16.200.50
+scan ports at 10.10.30.30
+check what ports are accessible on 192.168.99.99
+please scan host 172.20.20.20 for open ports
+run port scan on 10.100.100.100
+scan 192.168.8.8 for listening services
+could you check ports on 172.16.50.50
+please do a port enumeration of 10.10.10.150
+scan the IP 192.168.77.77 for open ports
+I need a port scan on 172.31.50.50
+check open ports for 10.5.10.15
+please scan ports on 192.168.25.25
+run a scan against 172.16.16.16 to find ports
+could you port scan 10.10.10.250
+check what services are running on 192.168.11.11
+please perform a port scan against 172.30.30.30
+scan 10.50.100.150 for open ports
+I'd like a port check on 192.168.44.44
+run port enumeration against 172.16.123.45
+please scan 10.10.10.10 for listening ports
+check ports on 192.168.200.200
+could you do a scan of 172.31.75.75
+please port scan the host at 10.25.25.25
+scan 192.168.33.33 for accessible services
+run a port scan on 172.16.111.111
+I need you to check ports on 10.10.40.40
+please scan 192.168.66.66 for open ports
+perform port scanning against 172.20.50.100
+check what's open on 10.100.200.50
+could you scan ports at 192.168.123.123
+please do a port check of 172.16.88.88
+scan host 10.10.10.75 for ports
+run a port scan against 192.168.1.254
+I'd like you to scan 172.31.200.200 for ports
+check open ports on 10.75.75.75
+please perform a scan on 192.168.111.111
+scan 172.16.250.250 to find open ports
+could you port scan 10.10.50.50
+please check what ports are open on 192.168.22.22
+run port enumeration on 172.20.100.100
+scan the server at 10.200.200.200
+I need a port scan for 192.168.55.55
+please scan 172.31.25.25 for listening ports
+check ports on the host 10.10.10.125
+could you do a port scan on 192.168.222.222
+please scan 172.16.5.5 for open services
+run a port check on 10.30.30.30
+scan 192.168.150.150 for ports
+I'd like a port scan of 172.20.75.75
+check what ports are listening on 10.10.10.175
+please perform port scanning on 192.168.250.250
+could you scan 172.31.111.111 for open ports
+run a scan on 10.15.15.15 to check ports
+please port scan 192.168.180.180
+scan host 172.16.222.222 for accessible ports
+I need you to check ports on 10.10.60.60
+please scan 192.168.199.199 for open ports
+perform a port scan against 172.25.50.50
+check what's running on 10.125.125.125
+could you scan ports on 192.168.240.240
+please do a port check on 172.31.150.150
+scan 10.10.10.225 for open services
+please port scan 10.10.10.1 for ssh, http, https, and smtp
+scan 192.168.1.50 for ports 22, 80, and 443
+check if 172.16.0.100 has ssh and ftp open
+can you scan 10.0.0.25 for http, https, and mysql
+please check 192.168.100.1 for ssh, telnet, and rdp
+scan 172.31.255.200 for common web ports
+check 10.20.30.40 for ssh, smtp, and dns
+please scan 192.168.0.1 for ports 21, 22, 23, 80, 443
+run a scan on 172.16.50.75 for http and https
+check if 10.10.10.50 has ssh, ftp, and smtp open
+scan 192.168.2.100 for rdp and vnc
+please check 172.20.10.30 for web services and ssh
+scan 10.5.5.5 for ports 22, 25, 110, 143
+check 192.168.56.101 for ssh, http, https, and mysql
+please scan 172.16.100.50 for ftp, ssh, and http
+run a port scan on 10.100.50.25 for smtp and pop3
+check if 192.168.7.77 has postgres and mysql open
+scan 172.31.0.1 for ssh, http, https, and dns
+please check 10.10.20.30 for telnet and ssh
+scan 192.168.3.254 for ports 80, 443, 8080, 8443
+check 172.16.25.100 for ssh, smtp, imap, and pop3
+please scan 10.50.50.50 for rdp port 3389
+run a scan on 192.168.10.10 for ssh and vnc
+check if 172.18.0.50 has ftp and sftp open
+scan 10.1.1.1 for http, https, and ssh
+please check 192.168.88.1 for dns port 53
+scan 172.16.0.254 for smb ports 139 and 445
+check 10.10.10.100 for ssh, http, and mysql
+please scan 192.168.15.50 for web and mail ports
+run a port check on 172.25.25.25 for ssh and rdp
+scan 10.0.1.100 for ports 22, 80, 443, 3306
+check if 192.168.5.5 has ssh, ftp, and http open
+please scan 172.16.75.25 for smtp, imap, and pop3
+check 10.10.10.200 for http, https, and ssh services
+scan 192.168.50.50 for rdp and smb
+please check 172.31.100.100 for ssh and postgresql
+run a scan on 10.20.20.20 for ports 21, 22, 23, 80
+check if 192.168.1.1 has dns and http open
+scan 172.16.200.50 for ssh, mysql, and redis
+please check 10.10.30.30 for http, https, and smtp
+scan 192.168.99.99 for ftp, ssh, and telnet
+check 172.20.20.20 for web services on ports 80, 443, 8080
+please scan 10.100.100.100 for ssh and mongodb
+run a port scan on 192.168.8.8 for mail ports
+check if 172.16.50.50 has rdp port 3389 open
+scan 10.10.10.150 for ssh, http, https, and ftp
+please check 192.168.77.77 for smtp port 25
+scan 172.31.50.50 for ssh, vnc, and rdp
+check 10.5.10.15 for postgres port 5432
+please scan 192.168.25.25 for http and ssh
+run a scan on 172.16.16.16 for smb and rdp
+check if 10.10.10.250 has mysql port 3306 open
+scan 192.168.11.11 for ssh, http, and https
+please check 172.30.30.30 for ftp ports 20 and 21
+scan 10.50.100.150 for telnet port 23
+check 192.168.44.44 for ssh and http services
+please scan 172.16.123.45 for dns and smtp
+run a port check on 10.10.10.10 for rdp
+scan 192.168.200.200 for ssh, smtp, and imap
+check if 172.31.75.75 has http, https, and mysql open
+please scan 10.25.25.25 for pop3 and imap
+check 192.168.33.33 for ssh port 22
+scan 172.16.111.111 for web ports and ssh
+please check 10.10.40.40 for smtp and pop3
+run a scan on 192.168.66.66 for ssh, ftp, and http
+check if 172.20.50.100 has rdp and vnc open
+scan 10.100.200.50 for http, https, and ssh
+please check 192.168.123.123 for mysql and postgres
+scan 172.16.88.88 for ports 22, 80, 443, 3389
+check 10.10.10.75 for ssh and smtp services
+please scan 192.168.1.254 for dns port 53
+run a port check on 172.31.200.200 for http and https
+scan 10.75.75.75 for ssh, telnet, and ftp
+check if 192.168.111.111 has smb ports open
+please scan 172.16.250.250 for imap and pop3
+check 10.10.50.50 for ssh and rdp
+scan 192.168.22.22 for http, https, and smtp
+please check 172.20.100.100 for ftp and ssh
+run a scan on 10.200.200.200 for mysql port 3306
+check if 192.168.55.55 has ssh and vnc open
+scan 172.31.25.25 for web and database ports
+please check 10.10.10.125 for smtp, pop3, and imap
+scan 192.168.222.222 for ssh and http
+check 172.16.5.5 for rdp port 3389
+please scan 10.30.30.30 for dns and http
+run a port check on 192.168.150.150 for ssh and ftp
+scan 172.20.75.75 for ports 22, 25, 80, 443
+check if 10.10.10.175 has postgres and redis open
+please scan 192.168.250.250 for http and mysql
+check 172.31.111.111 for ssh, smtp, and dns
+scan 10.15.15.15 for ftp and telnet
+please check 192.168.180.180 for rdp and smb
+run a scan on 172.16.222.222 for ssh and http services
+check if 10.10.60.60 has imap port 143 open
+scan 192.168.199.199 for http, https, ssh, and ftp
+please check 172.25.50.50 for smtp and mysql
+scan 10.125.125.125 for ssh and vnc ports
+check 192.168.240.240 for web services
+please scan 172.31.150.150 for dns, http, and https
+run a port check on 10.10.10.225 for ssh, rdp, and smtp
+please port scan 10.10.10.2 for ssh, http, https, and smtp
+scan 192.168.1.51 for open ports
+check if 172.16.0.101 has ftp and ssh open
+can you scan 10.0.0.26 for http, https, and postgresql
+please check 192.168.100.2 for ssh, telnet, and rdp
+scan 172.31.255.201 for common database ports
+check 10.20.30.41 for ssh, smtp, and http
+please scan 192.168.0.2 for ports 22, 80, 443, 8080
+run a scan on 172.16.50.76 for https and ssh
+check if 10.10.10.51 has mysql and mongodb open
+scan 192.168.2.101 for rdp port 3389
+please check 172.20.10.31 for web services
+scan 10.5.5.6 for ports 21, 22, 23
+check 192.168.56.102 for ssh and mysql
+please scan 172.16.100.51 for ftp, sftp, and ssh
+run a port scan on 10.100.50.26
+check if 192.168.7.78 has postgres open
+scan 172.31.0.2 for ssh, http, and dns
+please check 10.10.20.31 for telnet port 23
+scan 192.168.3.255 for web ports
+check 172.16.25.101 for email ports
+please scan 10.50.50.51 for rdp and vnc
+run a scan on 192.168.10.11 for ssh
+check if 172.18.0.51 has ftp port 21 open
+scan 10.1.1.2 for http and ssh
+please check 192.168.88.2 for dns
+scan 172.16.0.255 for smb
+check 10.10.10.101 for ssh and mysql ports
+please scan 192.168.15.51 for smtp and imap
+run a port check on 172.25.25.26
+scan 10.0.1.101 for ports 80, 443, 3306
+check if 192.168.5.6 has ssh and http open
+please scan 172.16.75.26 for mail services
+check 10.10.10.201 for http and https
+scan 192.168.50.51 for rdp
+please check 172.31.100.101 for ssh and postgres
+run a scan on 10.20.20.21 for ftp and ssh
+check if 192.168.1.2 has dns port 53 open
+scan 172.16.200.51 for database ports
+please check 10.10.30.31 for http and smtp
+scan 192.168.99.100 for ssh and telnet
+check 172.20.20.21 for ports 80, 443
+please scan 10.100.100.101 for mongodb port 27017
+run a port scan on 192.168.8.9
+check if 172.16.50.51 has rdp open
+scan 10.10.10.151 for ssh and http
+please check 192.168.77.78 for smtp
+scan 172.31.50.51 for vnc port 5900
+check 10.5.10.16 for postgresql
+please scan 192.168.25.26 for ssh
+run a scan on 172.16.16.17 for smb ports
+check if 10.10.10.251 has mysql open
+scan 192.168.11.12 for web services
+please check 172.30.30.31 for ftp
+scan 10.50.100.151 for telnet
+check 192.168.44.45 for ssh and http
+please scan 172.16.123.46 for dns and http
+run a port check on 10.10.10.11
+scan 192.168.200.201 for email ports
+check if 172.31.75.76 has http and mysql open
+please scan 10.25.25.26 for imap and pop3
+check 192.168.33.34 for ssh
+scan 172.16.111.112 for http, https, and ssh
+please check 10.10.40.41 for smtp
+run a scan on 192.168.66.67 for ftp and ssh
+check if 172.20.50.101 has rdp and smb open
+scan 10.100.200.51 for ssh and http
+please check 192.168.123.124 for database ports
+scan 172.16.88.89 for ports 22, 80, 443
+check 10.10.10.76 for ssh
+please scan 192.168.1.255 for dns
+run a port check on 172.31.200.201 for https
+scan 10.75.75.76 for ssh and ftp
+check if 192.168.111.112 has smb open
+please scan 172.16.250.251 for mail ports
+check 10.10.50.51 for rdp
+scan 192.168.22.23 for http and smtp
+please check 172.20.100.101 for ssh
+run a scan on 10.200.200.201 for mysql
+check if 192.168.55.56 has vnc open
+scan 172.31.25.26 for web ports
+please check 10.10.10.126 for email services
+scan 192.168.222.223 for ssh
+check 172.16.5.6 for rdp
+please scan 10.30.30.31 for dns and smtp
+run a port check on 192.168.150.151
+scan 172.20.75.76 for ssh, smtp, http
+check if 10.10.10.176 has postgres open
+please scan 192.168.250.251 for http
+check 172.31.111.112 for ssh and dns
+scan 10.15.15.16 for ftp
+please check 192.168.180.181 for rdp
+run a scan on 172.16.222.223 for ssh and http
+check if 10.10.60.61 has imap open
+scan 192.168.199.200 for ssh, http, https
+please check 172.25.50.51 for smtp
+scan 10.125.125.126 for vnc
+check 192.168.240.241 for web services
+please scan 172.31.150.151 for dns and http
+run a port check on 10.10.10.226 for ssh and rdp
+scan 192.168.1.100 for open ports
+please check 10.50.75.100 for ssh, http, and mysql
+run a port scan on 172.16.32.64
+check if 192.168.77.88 has ftp and telnet open
+scan 10.10.10.52 for smtp, pop3, and imap
+please scan 172.20.40.80 for web ports
+check 192.168.100.200 for ssh and rdp
+scan 10.0.5.10 for ports 22, 80, 443
+please check 172.16.128.1 for database services
+run a scan on 192.168.64.128 for http and https
+check if 10.10.10.102 has dns port 53 open
+scan 172.31.64.32 for ssh and ftp
+please scan 192.168.128.64 for mysql port 3306
+check 10.20.40.80 for smtp and http
+scan 172.16.96.48 for rdp
+please check 192.168.32.16 for ssh
+run a port scan on 10.10.10.202
+check if 172.20.80.40 has postgres open
+scan 192.168.16.8 for web services
+please scan 10.100.200.100 for ssh and vnc
+check 172.31.128.192 for ftp and ssh
+scan 192.168.192.96 for ports 80, 443, 8080
+please check 10.10.40.80 for smtp
+run a scan on 172.16.160.80 for http
+check if 192.168.96.192 has mysql open
+scan 10.50.100.200 for ssh, http, https
+please scan 172.20.120.60 for rdp and smb
+check 192.168.48.24 for dns
+scan 10.10.10.152 for ssh and smtp
+please check 172.31.96.48 for web ports
+run a port check on 192.168.24.12 for ssh
+check if 10.75.150.225 has ftp open
+scan 172.16.192.128 for http and mysql
+please scan 192.168.12.6 for email ports
+check 10.10.10.252 for ssh
+scan 172.20.160.120 for postgres
+please check 192.168.6.3 for rdp
+run a scan on 10.125.250.125 for http and ssh
+check if 172.31.160.80 has vnc open
+scan 192.168.3.1 for web services
+please scan 10.10.50.100 for ssh and mysql
+check 172.16.224.112 for ftp
+scan 192.168.112.224 for ports 22, 25, 80
+please check 10.20.60.120 for smtp and dns
+run a port scan on 172.31.224.160
+check if 192.168.224.112 has ssh and http open
+scan 10.10.10.103 for rdp
+please scan 172.20.200.150 for database ports
+check 192.168.160.208 for ssh
+scan 10.100.150.75 for http, https, smtp
+please check 172.16.208.176 for web services
+run a scan on 192.168.176.144 for ssh and ftp
+check if 10.10.10.203 has mysql open
+scan 172.31.176.112 for http
+please scan 192.168.144.120 for ssh and rdp
+check 10.50.125.175 for smtp
+scan 172.20.240.180 for postgres port 5432
+please check 192.168.120.96 for dns
+run a port check on 10.10.10.77 for ssh
+check if 172.16.240.224 has ftp and telnet open
+scan 192.168.96.72 for web ports
+please scan 10.75.175.225 for ssh and mysql
+check 172.31.240.208 for rdp
+scan 192.168.72.48 for http and ssh
+please check 10.10.70.140 for smtp and imap
+run a scan on 172.20.250.200 for vnc
+check if 192.168.48.32 has postgres open
+scan 10.125.225.150 for ssh
+please scan 172.16.250.240 for web services
+check 192.168.32.24 for ftp
+scan 10.10.10.153 for ssh, http, https
+please check 172.31.250.225 for mysql
+run a port scan on 192.168.24.16 for rdp
+check if 10.20.80.160 has dns open
+scan 172.21.10.20 for ssh and smtp
+please scan 192.168.16.12 for http
+check 10.10.10.253 for postgres
+scan 172.21.20.30 for web ports
+please check 192.168.12.8 for ssh and ftp
+run a scan on 10.100.175.125 for mysql
+check if 172.21.30.40 has rdp open
+scan 192.168.8.4 for email services
+please scan 10.50.150.200 for ssh
+check 172.21.40.50 for http and https
+scan 192.168.4.2 for vnc
+please check 10.10.10.104 for dns and smtp
+run a port check on 172.21.50.60 for ssh
+check if 192.168.2.1 has mysql open
+scan 10.75.200.250 for web services
+please scan 172.21.60.70 for ftp and ssh
+check 192.168.1.50 for rdp
+scan 10.10.10.204 for http, ssh, mysql
+please check 172.21.70.80 for postgres
+run a scan on 192.168.50.100 for smtp
+check if 10.125.175.100 has ssh and vnc open
+scan 172.21.80.90 for web ports
+please scan 192.168.100.150 for dns
+check 10.20.100.180 for ssh
+scan 172.21.90.100 for ftp and telnet
+please check 192.168.150.200 for mysql
+run a port scan on 10.10.10.78 for rdp
+check if 172.21.100.110 has http and https open
+scan 192.168.200.250 for ssh
+please scan 10.50.175.225 for smtp and imap
+check 172.21.110.120 for postgres
+scan 192.168.250.225 for web services
+please check 10.10.10.154 for ssh and mysql
+run a scan on 172.21.120.130 for ftp
+check if 192.168.225.200 has rdp open
+scan 10.100.125.75 for dns
+please scan 172.21.130.140 for ssh and http
+check 192.168.175.150 for vnc
+scan 10.10.10.254 for email ports
+please check 172.21.140.150 for mysql
+run a port check on 192.168.125.100 for ssh
+check if 10.75.225.200 has postgres open
+scan 172.21.150.160 for web services
+please scan 192.168.75.50 for ftp and ssh
+check 10.20.120.200 for rdp
+scan 172.21.160.170 for http and smtp
+please check 192.168.50.25 for dns
+run a scan on 10.10.10.105 for ssh
+check if 172.21.170.180 has mysql open
+scan 192.168.25.12 for web ports
+please scan 10.125.150.125 for postgres
+check 172.21.180.190 for ssh and ftp
+scan 192.168.12.6 for rdp
+please check 10.50.200.100 for vnc
+run a port scan on 172.21.190.200 for http
+check if 192.168.6.3 has smtp and imap open
+scan 10.10.10.205 for ssh and mysql
+please scan 172.21.200.210 for dns
+check 192.168.3.2 for web services
+scan 10.100.150.100 for ftp
+please check 172.21.210.220 for rdp and smb
+run a scan on 192.168.2.4 for ssh
+check if 10.75.250.225 has postgres open
+scan 172.21.220.230 for http and https
+please scan 192.168.4.8 for mysql
+check 10.10.10.79 for email services
+scan 172.21.230.240 for ssh and vnc
+please check 192.168.8.16 for dns
+run a port check on 10.20.140.220 for ftp
+check if 172.21.240.250 has rdp open
+scan 192.168.16.32 for web ports
+please scan 10.125.200.175 for ssh and http
+check 172.22.10.20 for mysql
+scan 192.168.32.64 for postgres
+please check 10.50.225.125 for smtp
+run a scan on 172.22.20.30 for ssh
+check if 192.168.64.128 has vnc open
+scan 10.10.10.155 for web services
+please scan 172.22.30.40 for ftp and ssh
+check 192.168.128.192 for rdp
+scan 10.100.175.150 for http and mysql
+please check 172.22.40.50 for dns
+run a port scan on 192.168.192.224 for ssh
+check if 10.10.10.255 has postgres open
+scan 172.22.50.60 for email ports
+please scan 192.168.224.208 for web services
+check 10.75.225.250 for ssh and ftp
+scan 172.22.60.70 for rdp
+please check 192.168.208.176 for mysql
+run a scan on 10.20.160.240 for http and smtp
+check if 172.22.70.80 has vnc open
+scan 192.168.176.144 for dns
+please scan 10.125.225.200 for ssh
+check 172.22.80.90 for postgres
+scan 192.168.144.112 for web ports
+please check 10.50.250.150 for ftp and telnet
+run a port check on 172.22.90.100 for ssh and http
+check if 192.168.112.80 has mysql open
+scan 10.10.10.106 for rdp
+please scan 172.22.100.110 for smtp and imap
+check 192.168.80.64 for ssh
+scan 10.100.200.175 for web services
+please check 172.22.110.120 for postgres
+run a scan on 192.168.64.48 for ftp
+check if 10.10.10.206 has vnc open
+scan 172.22.120.130 for dns and http
+please scan 192.168.48.36 for ssh and mysql
+check 10.80.160.200 for rdp
+scan 172.22.130.140 for web ports
+please check 192.168.36.27 for smtp
+run a port scan on 10.125.250.225 for ssh
+check if 172.22.140.150 has postgres open
+scan 192.168.27.18 for http and ftp
+please scan 10.50.225.175 for mysql
+check 172.22.150.160 for rdp and smb
+scan 192.168.18.9 for email services
+please check 10.10.10.80 for ssh and vnc
+run a scan on 172.22.160.170 for dns
+check if 192.168.9.5 has http and https open
+scan 10.100.225.200 for postgres
+please scan 172.22.170.180 for ssh and ftp
+check 192.168.5.10 for mysql
+scan 10.10.10.156 for web services
+please check 172.22.180.190 for rdp
+run a port check on 192.168.10.20 for smtp and ssh
+scan 10.75.200.225 for http, https, and dns
