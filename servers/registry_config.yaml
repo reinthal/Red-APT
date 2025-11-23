@@ -93,6 +93,37 @@ servers:
     category: dev
     priority: 6
 
+  # === Advanced Security Servers ===
+  vuln:
+    module: vuln_scanner.py
+    description: "Vulnerability scanning - nuclei, CVE lookup, exploit search"
+    category: security
+    priority: 8
+
+  cloud:
+    module: cloud_recon.py
+    description: "Cloud recon - S3/Azure/GCP enumeration, misconfig detection"
+    category: recon
+    priority: 7
+
+  crypto:
+    module: crypto_server.py
+    description: "Crypto tools - hash cracking, JWT manipulation, credentials"
+    category: security
+    priority: 6
+
+  report:
+    module: report_server.py
+    description: "Report generation - findings aggregation, export formats"
+    category: reporting
+    priority: 5
+
+  jina:
+    module: jina_server.py
+    description: "Jina AI - web search, fact checking, URL reading, OSINT"
+    category: osint
+    priority: 7
+
 # Presets - named groups of servers for common tasks
 presets:
   minimal:
@@ -131,6 +162,40 @@ presets:
     - evasion
     - control
 
+  # New presets with advanced security servers
+  security_full:
+    - network
+    - subdomain
+    - web
+    - osint
+    - evasion
+    - control
+    - vuln
+    - cloud
+    - crypto
+    - report
+    - jina
+
+  hackathon:
+    - network
+    - web
+    - vuln
+    - cloud
+    - crypto
+    - report
+    - jina
+
+  pentest:
+    - network
+    - subdomain
+    - web
+    - osint
+    - vuln
+    - cloud
+    - crypto
+    - report
+    - jina
+
   all:
     - network
     - subdomain
@@ -138,6 +203,11 @@ presets:
     - osint
     - evasion
     - control
+    - vuln
+    - cloud
+    - crypto
+    - report
+    - jina
     - terminal
     - filesystem
     - packages

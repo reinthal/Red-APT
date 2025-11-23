@@ -6,5 +6,15 @@ fastmcp>=0.1.0
 # DNS operations (for subdomain enumeration)
 dnspython>=2.4.0
 
-# Optional tools (install if needed)
-# httpx>=0.25.0
+# HTTP client (for async requests - Jina, cloud recon)
+aiohttp>=3.9.0
+
+# Pydantic for data models
+pydantic>=2.0.0
+
+# Optional external tools (install system-wide if needed):
+# - nmap: Network scanning
+# - nuclei: Vulnerability scanning
+# - hashcat: Hash cracking
+# - wpscan: WordPress scanning
+# - nikto: Web server scanning

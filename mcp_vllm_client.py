@@ -139,6 +139,9 @@ class MCPvLLMClient:
         max_tokens: int = 4096,
         auto_retry_on_refusal: bool = False,
         max_retry_attempts: int = 3,
+        baseline_type: Optional[str] = None,  # "benign" or "malicious" for labeling
+        task_id: Optional[str] = None,  # Task ID for tracking
+        task_category: Optional[str] = None,  # Task category for fingerprinting
     ) -> None:
         self.model = model
         self.base_url = base_url
@@ -153,10 +156,29 @@ class MCPvLLMClient:
         self.max_retry_attempts = max_retry_attempts
 
         # OpenAI-compatible client for vLLM
+        # Add custom headers for baseline labeling and fingerprinting
+        self.session_id = str(uuid.uuid4())[:8]
+        self.request_sequence = 0
+        self.baseline_type = baseline_type
+
+        default_headers = {
+            "X-Session-ID": self.session_id,
+            "X-Client-Type": "mcp-vllm-client",
+            "X-Client-Version": "1.0.0",
+        }
+        if baseline_type:
+            default_headers["X-Baseline-Type"] = baseline_type
+        if task_id:
+            default_headers["X-Task-ID"] = str(task_id)
+        if task_category:
+            default_headers["X-Task-Category"] = task_category
+
         self.client = OpenAI(
             api_key=api_key,
             base_url=base_url,
+            default_headers=default_headers,
         )
+        self._default_headers = default_headers
 
         # MCP state
         self.mcp_sessions: Dict[str, ClientSession] = {}

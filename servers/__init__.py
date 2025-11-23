@@ -19,6 +19,13 @@ Development/Productivity Servers:
 - git_server: Version control operations
 - project_server: Project scaffolding and build tools
 
+Advanced Security Servers:
+- vuln_scanner: Vulnerability scanning, CVE lookup, nuclei integration
+- cloud_recon: Cloud storage enumeration (S3, Azure, GCP)
+- crypto_server: Hash cracking, JWT manipulation, credential testing
+- report_server: Security report generation, finding aggregation
+- jina_server: Web search, fact checking, URL reading via Jina AI
+
 Registry:
 - mcp_registry: Centralized registry with thermal context management
 """
@@ -54,6 +61,35 @@ RED_TEAM_SERVERS = {
         "module": "agent_control",
         "description": "Agent control - system prompt mutation, refusal detection",
         "category": "control",
+    },
+}
+
+# Advanced Security Servers
+ADVANCED_SECURITY_SERVERS = {
+    "vuln": {
+        "module": "vuln_scanner",
+        "description": "Vulnerability scanning - nuclei, CVE lookup, exploit search",
+        "category": "security",
+    },
+    "cloud": {
+        "module": "cloud_recon",
+        "description": "Cloud recon - S3/Azure/GCP enumeration, misconfig detection",
+        "category": "recon",
+    },
+    "crypto": {
+        "module": "crypto_server",
+        "description": "Crypto tools - hash cracking, JWT manipulation, credentials",
+        "category": "security",
+    },
+    "report": {
+        "module": "report_server",
+        "description": "Report generation - findings aggregation, export formats",
+        "category": "reporting",
+    },
+    "jina": {
+        "module": "jina_server",
+        "description": "Jina AI - web search, fact checking, URL reading, content extraction",
+        "category": "osint",
     },
 }
 
@@ -101,7 +137,7 @@ REGISTRY_SERVER = {
 }
 
 # Combined servers
-SERVERS = {**RED_TEAM_SERVERS, **DEV_SERVERS, **REGISTRY_SERVER}
+SERVERS = {**RED_TEAM_SERVERS, **ADVANCED_SECURITY_SERVERS, **DEV_SERVERS, **REGISTRY_SERVER}
 
 # Thermal context utilities
 from .thermal_context import (

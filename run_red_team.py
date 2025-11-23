@@ -58,6 +58,37 @@ RED_TEAM_SERVERS = {
         "description": "Agent control & mutation (system prompt, refusal detection)",
         "env": TEST_MODE_ENV,
     },
+    # === Advanced Security Servers ===
+    "vuln": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "vuln_scanner.py")],
+        "description": "Vulnerability scanning (nuclei, CVE lookup, exploit-db)",
+        "env": TEST_MODE_ENV,
+    },
+    "cloud": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "cloud_recon.py")],
+        "description": "Cloud recon (S3/Azure/GCP enumeration, misconfig detection)",
+        "env": TEST_MODE_ENV,
+    },
+    "crypto": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "crypto_server.py")],
+        "description": "Crypto tools (hash cracking, JWT manipulation, credentials)",
+        "env": TEST_MODE_ENV,
+    },
+    "report": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "report_server.py")],
+        "description": "Report generation (findings aggregation, export formats)",
+        "env": TEST_MODE_ENV,
+    },
+    "jina": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "jina_server.py")],
+        "description": "Jina AI (web search, fact checking, URL reading)",
+        "env": TEST_MODE_ENV,
+    },
 }
 
 # Development/Productivity MCP Servers
@@ -179,6 +210,19 @@ def parse_args():
         default=0.7,
         help="Sampling temperature",
     )
+    parser.add_argument(
+        "--baseline-type",
+        choices=["benign", "malicious"],
+        help="Label requests with X-Baseline-Type header for training data",
+    )
+    parser.add_argument(
+        "--task-id",
+        help="Task ID for tracking (X-Task-ID header)",
+    )
+    parser.add_argument(
+        "--task-category",
+        help="Task category for fingerprinting (X-Task-Category header)",
+    )
     return parser.parse_args()
 
 
@@ -209,6 +253,9 @@ async def main():
         system_prompt=system_prompt,
         max_iterations=args.max_iterations,
         temperature=args.temperature,
+        baseline_type=args.baseline_type,
+        task_id=args.task_id,
+        task_category=args.task_category,
     )
 
     # Use registry mode or direct mode

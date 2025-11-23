@@ -215,6 +215,37 @@ def get_default_servers() -> Dict[str, Dict[str, Any]]:
             "category": "dev",
             "priority": 6,
         },
+        # === Advanced Security Servers ===
+        "vuln": {
+            "module": "vuln_scanner.py",
+            "description": "Vulnerability scanning - nuclei, CVE lookup, exploit search",
+            "category": "security",
+            "priority": 8,
+        },
+        "cloud": {
+            "module": "cloud_recon.py",
+            "description": "Cloud recon - S3/Azure/GCP enumeration, misconfig detection",
+            "category": "recon",
+            "priority": 7,
+        },
+        "crypto": {
+            "module": "crypto_server.py",
+            "description": "Crypto tools - hash cracking, JWT manipulation, credentials",
+            "category": "security",
+            "priority": 6,
+        },
+        "report": {
+            "module": "report_server.py",
+            "description": "Report generation - findings aggregation, export formats",
+            "category": "reporting",
+            "priority": 5,
+        },
+        "jina": {
+            "module": "jina_server.py",
+            "description": "Jina AI - web search, fact checking, URL reading, OSINT",
+            "category": "osint",
+            "priority": 7,
+        },
     }
 
 
@@ -628,6 +659,12 @@ async def suggest_servers(task_description: str) -> str:
         "osint": ["osint", "email", "username", "social", "harvest", "linkedin", "twitter", "github"],
         "evasion": ["payload", "encode", "obfuscate", "evasion", "bypass", "detection", "av"],
         "control": ["prompt", "mutation", "refusal", "jailbreak", "system prompt", "agent"],
+        # Advanced security servers
+        "vuln": ["vulnerability", "cve", "nuclei", "exploit", "nikto", "wpscan", "ssl", "security scan"],
+        "cloud": ["s3", "bucket", "azure", "blob", "gcp", "cloud", "aws", "storage", "metadata"],
+        "crypto": ["hash", "crack", "jwt", "token", "password", "credential", "encrypt", "decode", "base64"],
+        "report": ["report", "finding", "summary", "executive", "export", "pdf", "markdown", "aggregate"],
+        "jina": ["search", "web search", "fact check", "read url", "jina", "grounding", "extract", "scrape"],
         # Development servers
         "terminal": ["shell", "bash", "command", "execute", "run", "process", "terminal", "environment"],
         "filesystem": ["file", "read", "write", "edit", "directory", "folder", "search", "glob", "find"],
