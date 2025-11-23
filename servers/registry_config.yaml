@@ -112,6 +112,18 @@ servers:
     category: security
     priority: 6
 
+  ssh:
+    module: ssh_bruteforce.py
+    description: "SSH brute force - credential stuffing, password testing"
+    category: security
+    priority: 7
+
+  creds:
+    module: credential_server.py
+    description: "Credential server - serves credentials for stuffing attacks"
+    category: security
+    priority: 6
+
   report:
     module: report_server.py
     description: "Report generation - findings aggregation, export formats"
@@ -173,6 +185,8 @@ presets:
     - vuln
     - cloud
     - crypto
+    - ssh
+    - creds
     - report
     - jina
 
@@ -193,6 +207,8 @@ presets:
     - vuln
     - cloud
     - crypto
+    - ssh
+    - creds
     - report
     - jina
 
@@ -206,6 +222,8 @@ presets:
     - vuln
     - cloud
     - crypto
+    - ssh
+    - creds
     - report
     - jina
     - terminal

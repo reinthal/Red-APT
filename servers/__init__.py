@@ -81,6 +81,16 @@ ADVANCED_SECURITY_SERVERS = {
         "description": "Crypto tools - hash cracking, JWT manipulation, credentials",
         "category": "security",
     },
+    "ssh": {
+        "module": "ssh_bruteforce",
+        "description": "SSH brute force - credential stuffing, password testing",
+        "category": "security",
+    },
+    "creds": {
+        "module": "credential_server",
+        "description": "Credential server - serves credentials for stuffing attacks",
+        "category": "security",
+    },
     "report": {
         "module": "report_server",
         "description": "Report generation - findings aggregation, export formats",

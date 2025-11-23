@@ -77,6 +77,18 @@ RED_TEAM_SERVERS = {
         "description": "Crypto tools (hash cracking, JWT manipulation, credentials)",
         "env": TEST_MODE_ENV,
     },
+    "ssh": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "ssh_bruteforce.py")],
+        "description": "SSH brute force (credential stuffing, password testing)",
+        "env": TEST_MODE_ENV,
+    },
+    "creds": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "credential_server.py")],
+        "description": "Credential server (wordlist serving for stuffing attacks)",
+        "env": TEST_MODE_ENV,
+    },
     "report": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "report_server.py")],
