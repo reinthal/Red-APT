@@ -96,7 +96,7 @@ ADVANCED_SECURITY_SERVERS = {
         "description": "C2 callbacks - remote command execution via SSH",
         "category": "security",
     },
-    "killchain": {
+    "killchaindb": {
         "module": "killchain_db",
         "description": "Kill chain database - central store for all findings",
         "category": "data",

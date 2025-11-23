@@ -36,7 +36,7 @@ from fastmcp import FastMCP
 # Check for test mode
 TEST_MODE = os.getenv("MCP_TEST_MODE", "false").lower() == "true"
 
-mcp = FastMCP("killchain_db")
+mcp = FastMCP("killchaindb")
 
 # ---------------------------------------------------------------------------
 # Database Configuration

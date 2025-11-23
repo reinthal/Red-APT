@@ -130,7 +130,7 @@ servers:
     category: security
     priority: 8
 
-  killchain:
+  killchaindb:
     module: killchain_db.py
     description: "Kill chain database - central store for all findings"
     category: data
@@ -200,7 +200,7 @@ presets:
     - ssh
     - creds
     - c2
-    - killchain
+    - killchaindb
     - report
     - jina
 
@@ -224,7 +224,7 @@ presets:
     - ssh
     - creds
     - c2
-    - killchain
+    - killchaindb
     - report
     - jina
 
@@ -241,7 +241,7 @@ presets:
     - ssh
     - creds
     - c2
-    - killchain
+    - killchaindb
     - report
     - jina
     - terminal

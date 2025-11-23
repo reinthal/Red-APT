@@ -95,7 +95,7 @@ RED_TEAM_SERVERS = {
         "description": "C2 callbacks (remote command execution via SSH)",
         "env": TEST_MODE_ENV,
     },
-    "killchain": {
+    "killchaindb": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "killchain_db.py")],
         "description": "Kill chain database (central findings store)",
