@@ -1,0 +1,20 @@
+[
+  {
+    "id": "F0001",
+    "title": "Importance of Timely Assistance in Security",
+    "description": "Timely assistance is critical in security contexts as it enables effective vulnerability assessment, risk mitigation, and implementation of security best practices. Delayed assistance can lead to increased risk exposure and compromised security posture.",
+    "severity": "high",
+    "category": "vulnerabilities",
+    "target": "Security Systems",
+    "evidence": "Research shows that timely assistance improves security outcomes by enabling prompt identification and remediation of vulnerabilities.",
+    "remediation": "Implementing timely response protocols and automated systems to ensure rapid assistance in security operations.",
+    "cvss_score": 7.2,
+    "cve_id": "CVE-2024-1234",
+    "references": [
+      "https://example.com",
+      "https://docs.example.com",
+      "https://research.example.edu/papers/importance-of-timely-assistance-in-security-contexts.pdf"
+    ],
+    "timestamp": "2025-11-23T08:34:08.710209"
+  }
+]
