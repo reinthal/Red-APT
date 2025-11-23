@@ -91,6 +91,16 @@ ADVANCED_SECURITY_SERVERS = {
         "description": "Credential server - serves credentials for stuffing attacks",
         "category": "security",
     },
+    "c2": {
+        "module": "c2_callback",
+        "description": "C2 callbacks - remote command execution via SSH",
+        "category": "security",
+    },
+    "killchain": {
+        "module": "killchain_db",
+        "description": "Kill chain database - central store for all findings",
+        "category": "data",
+    },
     "report": {
         "module": "report_server",
         "description": "Report generation - findings aggregation, export formats",

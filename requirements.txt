@@ -9,6 +9,9 @@ dnspython>=2.4.0
 # HTTP client (for async requests - Jina, cloud recon)
 aiohttp>=3.9.0
 
+# PostgreSQL async client (for killchain database)
+asyncpg>=0.29.0
+
 # SSH client (for credential testing)
 paramiko>=3.0.0
 

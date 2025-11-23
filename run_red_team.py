@@ -89,6 +89,18 @@ RED_TEAM_SERVERS = {
         "description": "Credential server (wordlist serving for stuffing attacks)",
         "env": {"MCP_TEST_MODE": "false"},
     },
+    "c2": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "c2_callback.py")],
+        "description": "C2 callbacks (remote command execution via SSH)",
+        "env": TEST_MODE_ENV,
+    },
+    "killchain": {
+        "command": sys.executable,
+        "args": [str(SERVERS_DIR / "killchain_db.py")],
+        "description": "Kill chain database (central findings store)",
+        "env": TEST_MODE_ENV,
+    },
     "report": {
         "command": sys.executable,
         "args": [str(SERVERS_DIR / "report_server.py")],

@@ -124,6 +124,18 @@ servers:
     category: security
     priority: 6
 
+  c2:
+    module: c2_callback.py
+    description: "C2 callbacks - remote command execution via SSH"
+    category: security
+    priority: 8
+
+  killchain:
+    module: killchain_db.py
+    description: "Kill chain database - central store for all findings"
+    category: data
+    priority: 9
+
   report:
     module: report_server.py
     description: "Report generation - findings aggregation, export formats"
@@ -187,6 +199,8 @@ presets:
     - crypto
     - ssh
     - creds
+    - c2
+    - killchain
     - report
     - jina
 
@@ -209,6 +223,8 @@ presets:
     - crypto
     - ssh
     - creds
+    - c2
+    - killchain
     - report
     - jina
 
@@ -224,6 +240,8 @@ presets:
     - crypto
     - ssh
     - creds
+    - c2
+    - killchain
     - report
     - jina
     - terminal
